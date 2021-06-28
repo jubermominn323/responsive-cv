@@ -1,3 +1,7 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
@@ -20,7 +24,7 @@ header{
 header nav {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 60%;
     margin-top: 10px;
 }
 
@@ -60,4 +64,125 @@ header nav a{
 .cover button:hover{
     background: #f7e576;
     background-color: #f7e576;
+}
+
+.about{
+    padding: 16px 32px;
+}
+
+.about .form-field{
+    font-weight: bold;
+}
+
+.about img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.services{
+    padding: 16px 32px;
+}
+
+.services h1{
+    text-align: center;
+}
+
+.services div{
+    text-align: center;
+}
+
+.skills{
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills h1{
+    text-align: center;
+}
+
+.skills .rating-container{
+    padding: 32px;
+    width: 100%;
+}
+
+.skills .rating-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .progress-bar progress{
+    width: 100%;
+    height: 2rem;
+}
+
+.skills .rating-box{
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+
+    header nav{
+        display: flex;
+        width: 30%;
+    }
+
+    .cover{
+        padding-right: 56px;
+        padding-left: 56px;
+    }
+
+    .about {
+        display: flex;
+      }
+    
+      .about div {
+        width: 50%;
+      }
+    
+      .about div img {
+        max-width: 70%;
+      }
+    
+      .about div:nth-child(2) {
+        text-align: right;
+      }
+
+      .services > div{
+          display: flex;
+          justify-content: space-around;
+      }
+
+      .skills .rating-container{
+          width: 70%;
+      }
+    
+}
+
+@media screen and (min-width:1024px){
+    .cover{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+
+    .about{
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+
+    .about .about-img img{
+        max-width: 50%;
+    }
 }
